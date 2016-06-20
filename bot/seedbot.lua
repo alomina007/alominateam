@@ -237,7 +237,6 @@ function create_config( )
     "lock_join",
     "leave_ban",
     "lock_operator",
-    "supergroup",
     "whitelist",
     "msg_checks",
     "sethelp",
