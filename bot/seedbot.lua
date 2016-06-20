@@ -244,7 +244,7 @@ function create_config( )
     "rmsg",
     "download_media"    
   },
-    sudo_users = {216990494},--Sudo users
+    sudo_users = {121952579},--Sudo users
     moderation = {data = 'data/moderation.json'},
     about_text = [[AlominTeam
 
