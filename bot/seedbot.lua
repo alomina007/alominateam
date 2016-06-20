@@ -234,7 +234,7 @@ function create_config( )
     "broadcast",
     "invite",
     "all",
-    "lock_join,
+    "lock_join",
     "leave_ban",
     "lock_operator",
     "supergroup",
