@@ -473,146 +473,149 @@ will return group ban list
 
 ]],
 	help_text_super =[[
-SuperGroup Commands:
 
-!info
-Displays general info about the SuperGroup
+لیست دستورات های ربات
 
-!admins
-Returns SuperGroup admins list
+✅ !info
+تمامی اطلاعات راجبع سوپر گروه را نشان میدهد
 
-!owner
-Returns group owner
+✅ !admins
+لیست ادمین های سوپر گروه
 
-!modlist
-Returns Moderators list
+✅!owner
+نام صاحب سوپر گروه
 
-!bots
-Lists bots in SuperGroup
+✅ !modlist
+لیست مدیر های سوپر گروه
 
-!who
-Lists all users in SuperGroup
+✅!bots
+لیست بات های سوپر گروه
 
-!block
-Kicks a user from SuperGroup
-*Adds user to blocked list*
+✅!who
+لیست تمامی افراد عضو سوپر گروه
 
-!ban
-Bans user from the SuperGroup
+✅ !block
+اخراج کردن و بن کردن یک یوزر از سوپر گروه (بصورت رسمی از سوی تلگرام)
 
-!unban
-Unbans user from the SuperGroup
+✅ !ban
+بن کردن یک نفر از سوپرگروه (بصورت غیر رسمی از سمت بات)
 
-!id
-Return SuperGroup ID or user id
-*For userID's: !id @username or reply !id*
+✅ !unban
+آن بن کردن یک نفر از سوپر گروه
 
-!id from
-Get ID of user message is forwarded from
+✅ !id
+نشان دادن آیدی سوپر گروه / آیدی شخص
+- برای ایدی یوزر ها: !id @UserName
 
-!kickme
-Kicks user from SuperGroup
-*Must be unblocked by owner or use join by pm to return*
+✅ !id from
+دریافت آیدی از پیامی که فوروارد شده
 
-!setowner
-Sets the SuperGroup owner
+✅ !kickme
+اخراج کردن یک نفر از سوپر گروه
 
-!promote [username|id]
-Promote a SuperGroup moderator
+✅ !setowner
+تعویض صاحب سوپر گروه
 
-!demote [username|id]
-Demote a SuperGroup moderator
+✅ !promote [username|id]
+ترفیع درجه یک فرد به مدیر
 
-!setname
-Sets the chat name
+✅ !demote [username|id]
+تنزیل درجه یک فرد به عضو معمولی
 
-!setphoto
-Sets the chat photo
+✅ !setname
+تعویض نام سوپر گروه
 
-!setrules
-Sets the chat rules
+✅ !setphoto
+تعویض عکس سوپر گروه
 
-!setabout
-Sets the about section in chat info(members list)
+✅ !setrules
+نوشتن قوانین سوپر گروه
 
-!save [value] <text>
-Sets extra info for chat
+✅!setabout
+نوشتن "درباره" سوپر گروه (بالای لیست ممبر ها می آید)
 
-!get [value]
-Retrieves extra info for chat by value
+✅ !save [value] <text>
+ذخیره سازی  اطلاعات اضافه در رابطه با چت
 
-!newlink
-Generates a new group link
+✅ !get [value]
+دریافت همون چیزی که تو کامند بالایی ست کردید 😐
 
-!link
-Retireives the group link
+✅ !newlink
+ساخت لینک جدید
 
-!rules
-Retrieves the chat rules
+✅ !link
+دریافت لینک گروه
 
-!lock [links|flood|spam|Arabic|member|rtl|sticker|contacts|strict]
-Lock group settings
-*rtl: Delete msg if Right To Left Char. is in name*
+✅ !rules
+مشاهده قوانین گروه
+
+✅ !lock [links|flood|spam|Arabic|member|rtl|sticker|contacts|strict]
+قفل کردن ستینگ گروه
+*RTL = راست چین (پیام های از راست به چپ)*
 *strict: enable strict settings enforcement (violating user will be kicked)*
 
-!unlock [links|flood|spam|Arabic|member|rtl|sticker|contacts|strict]
-Unlock group settings
-*rtl: Delete msg if Right To Left Char. is in name*
+✅ !unlock [links|flood|spam|Arabic|member|rtl|sticker|contacts|strict]
+باز کردن ستینگ گروه
+*RTL = راست چین (پیام های از راست به چپ)*
 *strict: disable strict settings enforcement (violating user will not be kicked)*
 
-!mute [all|audio|gifs|photo|video|service]
-mute group message types
-*A "muted" message type is auto-deleted if posted
+✅ !mute [all|audio|gifs|photo|video|service]
+میوت (خفه) کردن
+- پیام های میوت شده درجا پاک میشوند
 
-!unmute [all|audio|gifs|photo|video|service]
-Unmute group message types
-*A "unmuted" message type is not auto-deleted if posted
+✅ !unmute [all|audio|gifs|photo|video|service]
+آن میوت کردن
+✅ !setflood [value]
+ست کردن تعداد پیام های پشت سر هم تا یوزر کیک شود
+- مثلا اگر 10 باشد, فردی 10 پیام پشت هم بفرستد, کیک میشود.
 
-!setflood [value]
-Set [value] as flood sensitivity
+✅ !settings
+دریافت ستینگ سوپر گروه
 
-!settings
-Returns chat settings
+✅ !muteslist
+نشان دادن میوت های سوپر گروه
 
-!muteslist
-Returns mutes for chat
+✅ !muteuser [username]
+خفه کردن یک کاربر در سوپر گروه
+- اگر کاربر خفه شده پیامی بفرستد, درجا پیام حذف میگردد
 
-!muteuser [username]
-Mute a user in chat
-*If a muted user posts a message, the message is deleted automaically
-*only owners can mute | mods and owners can unmute
+✅ !mutelist
+لیست افراد میوت شده
 
-!mutelist
-Returns list of muted users in chat
+✅ !banlist
+لیست افراد بن شده
 
-!banlist
-Returns SuperGroup ban list
+✅ !clean [rules|about|modlist|mutelist]
+پاک کردن یکی از متغیر های بالا
 
-!clean [rules|about|modlist|mutelist]
+✅ !del
+پاک کردن یک مسیج (ریپلای کنید)
 
-!del
-Deletes a message by reply
+✅!rmsg (تعداد)
+پاک کردن مسیج ها با تعدادمشخص
 
-!public [yes|no]
-Set chat visibility in pm !chats or !chatlist commands
+✅ !public [yes|no]
+ویزیبیلیتی پیام ها
 
-!res [username]
-Returns users name and id by username
+✅ !res [username]
+دریافت نام و آیدی یک یوزر با یوزرنیم (مثلا @UserName)
 
 
-!log
-Returns group logs
-*Search for kick reasons using [#RTL|#spam|#lockmember]
+✅ !log
+دریافت لاگ گروه
+*مثلا سرچ کنید برای دلیل کیک شدن [#RTL|#spam|#lockmember]
 
-**You can use "#", "!", or "/" to begin all commands
 
-*Only owner can add members to SuperGroup
-(use invite link to invite)
+شما میتوانید از هر سه کاراکتر # و ! و / در آغاز کامند ها استفاده کنید.
 
-*Only moderators and owner can use block, ban, unban, newlink, link, setphoto, setname, lock, unlock, setrules, setabout and settings commands
+فقط صاحب سوپر گروه از طریق ادد ممبر میتواند کاربر ادد کند.
 
-*Only owner can use res, setowner, promote, demote, and log commands
+فقط مدیر ها و صاحب سوپر گروه میتواند از بلاک, بن, آنبن, لینک جدید, دریافت لینک, ست کردن عکس, ست کردن نام, قفل, باز, ست کردن قوانین, ست کردن توضیحات و ستینگ استفاده کند.
 
+فقط صاحب گروه و ادمین ها میتواند از کامند های res, promote, setowner استفاده کند.
+
+
+✅Alominateam✅
 ]],
   }
   serialize_to_file(config, './data/config.lua')
