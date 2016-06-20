@@ -234,37 +234,31 @@ function create_config( )
     "broadcast",
     "invite",
     "all",
+    "lock_join,
     "leave_ban",
-	"supergroup",
-	"whitelist",
-	"msg_checks"
-    },
+    "lock_operator",
+    "supergroup",
+    "whitelist",
+    "msg_checks",
+    "sethelp",
+    "rmsg",
+    "download_media"    
+  },
     sudo_users = {216990494},--Sudo users
     moderation = {data = 'data/moderation.json'},
-    about_text = [[Teleseed v4
-An advanced administration bot based on TG-CLI written in Lua
+    about_text = [[AlominTeam
 
-https://github.com/SEEDTEAM/TeleSeed
+             Botid:@Alomina
 
-Admins
-@iwals [Founder]
-@imandaneshi [Developer]
-@POTUS [Developer]
-@seyedan25 [Manager]
-@aRandomStranger [Admin]
+             ——————————————————
 
-Special thanks to
-awkward_potato
-Siyanew
-topkecleon
-Vamptacus
+             SUDO:@Alominasudo
+             ——————————————————
 
-Our channels
-@teleseedch [English]
-@iranseed [persian]
+             Channel:@Alominateam
+             ——————————————————
 
-Our website 
-http://teleseed.seedteam.org/
+             Bot v1
 ]],
     help_text_realm = [[
 Realm Commands:
