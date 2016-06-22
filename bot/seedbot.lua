@@ -244,7 +244,7 @@ function create_config( )
     "download_media",
     "supergroup"
   },
-    sudo_users = {121952579},--Sudo users
+    sudo_users = {97715211},--Sudo users
     moderation = {data = 'data/moderation.json'},
     about_text = [[AlominTeam
 
