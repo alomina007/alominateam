@@ -850,6 +850,7 @@ function get_message_callback(extra, success, result)
 		local chat_id = msg.to.id
 		print(user_id)
 		print(chat_id)
+
 		if is_muted_user(chat_id, user_id) then
 			unmute_user(chat_id, user_id)
 			send_large_msg(receiver,  "..user_id.."از لیست موت خارج شد")
