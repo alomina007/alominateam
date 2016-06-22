@@ -852,7 +852,7 @@ function get_message_callback(extra, success, result)
 		print(chat_id)
 		if is_muted_user(chat_id, user_id) then
 			unmute_user(chat_id, user_id)
-			send_large_msg(receiver, "..user_id.."  از لیست موت خارج شد")
+			send_large_msg(receiver, "..user_id.." از لیست موت خارج شد")
 		elseif is_(msg) then
 			mute_user(chat_id, user_id)
 			send_large_msg(receiver,  "..user_id.."  به لیست موت اضافه شد")
