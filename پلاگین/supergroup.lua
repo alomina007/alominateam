@@ -1006,6 +1006,7 @@ local function callbackres(extra, success, result)
 		local receiver = extra.receiver
 		local chat_id = string.gsub(receiver, 'channel#id', '')
 		if is_muted_user(chat_id, user_id) then
+
 			unmute_user(chat_id, user_id)
 			send_large_msg(receiver,  "..user_id.."  از لیست موت خارج شد")
 		elseif is_owner(extra.msg) then
