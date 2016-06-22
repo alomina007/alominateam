@@ -212,7 +212,7 @@ function create_config( )
   -- A simple config with basic plugins and ourselves as privileged user
   config = {
     enabled_plugins = {
-	"admin",
+    "admin",
     "onservice",
     "inrealm",
     "ingroup",
@@ -241,7 +241,8 @@ function create_config( )
     "msg_checks",
     "sethelp",
     "rmsg",
-    "download_media"    
+    "download_media",
+    "supergroup"
   },
     sudo_users = {121952579},--Sudo users
     moderation = {data = 'data/moderation.json'},
